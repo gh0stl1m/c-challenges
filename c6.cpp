@@ -62,7 +62,6 @@ string decrypt_ceasar(string encrypted_message, int key) {
       // applying the mod operation
       character = static_cast<char>(base + (character - base - key + 26) % 26);
     }
-
     decryped_message += character;
   }
 
